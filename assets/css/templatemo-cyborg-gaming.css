@@ -1633,6 +1633,150 @@ Profile Style
 
 /* 
 ---------------------------------------------
+Sign Up Page Style
+--------------------------------------------- 
+*/
+
+.signup-form-container {
+  background-color: #1f2122;
+  border-radius: 23px;
+  padding: 45px;
+  margin: 0 auto;
+}
+
+.signup-form-container .heading-section {
+  margin-bottom: 30px;
+}
+
+.signup-form-container .heading-section p {
+  color: #666;
+  margin-top: 10px;
+}
+
+.signup-form-group {
+  margin-bottom: 20px;
+}
+
+.signup-form-group label {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.signup-form-group .input-icon {
+  position: relative;
+}
+
+.signup-form-group .input-icon i {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 16px;
+}
+
+.signup-form-group .input-icon input {
+  width: 100%;
+  background-color: #27292a;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid transparent;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  padding: 0px 20px 0px 50px;
+  transition: all .3s;
+}
+
+.signup-form-group .input-icon input::placeholder {
+  color: #666;
+}
+
+.signup-form-group .input-icon input:focus {
+  outline: none;
+  border-color: #e75e8d;
+}
+
+.signup-form-group.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.signup-form-group.checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #e75e8d;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.signup-form-group.checkbox-group label {
+  margin-bottom: 0;
+  font-size: 13px;
+  color: #666;
+  font-weight: 400;
+}
+
+.signup-form-group.checkbox-group label a {
+  color: #ec6090;
+}
+
+.signup-form-group.checkbox-group label a:hover {
+  color: #fff;
+}
+
+.signup-form-group .main-button {
+  margin-top: 10px;
+}
+
+.signup-form-group .main-button button {
+  font-size: 14px;
+  color: #fff;
+  background-color: #e75e8d;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
+.signup-form-group .main-button button:hover {
+  background-color: #fff;
+  color: #e75e8d;
+}
+
+.signup-form-footer {
+  margin-top: 20px;
+}
+
+.signup-form-footer p {
+  color: #666;
+  font-size: 14px;
+}
+
+.signup-form-footer p a {
+  color: #ec6090;
+}
+
+.signup-form-footer p a:hover {
+  color: #fff;
+}
+
+/* 
+---------------------------------------------
 Responsive Style
 --------------------------------------------- 
 */
@@ -1644,6 +1788,9 @@ body {
 @media (max-width: 767px) {
   body .page-content {
     padding: 0px 30px;
+  }
+  .signup-form-container {
+    padding: 30px 20px;
   }
   .main-banner {
     text-align: center;
