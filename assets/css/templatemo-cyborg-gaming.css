@@ -1733,9 +1733,29 @@ Sign Up Page Style
   margin-top: 10px;
 }
 
-.signup-form-group .main-button a {
+.signup-form-group .main-button button {
+  font-size: 14px;
+  color: #fff;
+  background-color: #e75e8d;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
   width: 100%;
   text-align: center;
+}
+
+.signup-form-group .main-button button:hover {
+  background-color: #fff;
+  color: #e75e8d;
 }
 
 .signup-form-footer {
