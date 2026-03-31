@@ -170,7 +170,7 @@
                           <label for="custom-preference-name">Nom de la préférence</label>
                           <div class="input-icon">
                             <i class="fa fa-pencil"></i>
-                            <input type="text" id="custom-preference-name" name="custom-preference-name" placeholder="Ex : Plat préféré">
+                            <input type="text" id="custom-preference-name" name="custom-preference-name" placeholder="Ex : Plat préféré" aria-describedby="custom-preference-feedback">
                           </div>
                         </div>
                       </div>
@@ -179,7 +179,7 @@
                           <label for="custom-preference-value">Valeur</label>
                           <div class="input-icon">
                             <i class="fa fa-heart"></i>
-                            <input type="text" id="custom-preference-value" name="custom-preference-value" placeholder="Ex : Sushi">
+                            <input type="text" id="custom-preference-value" name="custom-preference-value" placeholder="Ex : Sushi" aria-describedby="custom-preference-feedback">
                           </div>
                         </div>
                       </div>
@@ -315,7 +315,6 @@
       input.id = inputId;
       input.name = `custom-preference-${customPreferenceCount}`;
       input.value = value;
-      input.placeholder = `Ex : ${value}`;
 
       iconWrapper.appendChild(icon);
       iconWrapper.appendChild(input);
