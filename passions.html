@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Passionate - Mes Passions</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Search End ***** -->
+                    <div class="search-input">
+                      <form id="search" action="#">
+                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                        <i class="fa fa-search"></i>
+                      </form>
+                    </div>
+                    <!-- ***** Search End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse</a></li>
+                        <li><a href="details.html">Details</a></li>
+                        <li><a href="streams.html">Streams</a></li>
+                        <li><a href="passions.html" class="active">Passions</a></li>
+                        <li><a href="profile.html">Profile <img src="assets/images/profile-header.jpg" alt=""></a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Passions Form Start ***** -->
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+              <div class="passions-form-container">
+                <div class="heading-section text-center">
+                  <h4><em>Mes</em> Passions</h4>
+                  <p>Partage tes préférences favorites. Tu peux compléter uniquement ce que tu veux et revenir plus tard.</p>
+                </div>
+                <form id="passions-form" action="#" method="post">
+                  <div class="preferences-section">
+                    <h5>Préférences principales</h5>
+                    <p class="section-note">Quelques exemples pour te guider : série, film, musique, artiste, anime, livre, marque.</p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="signup-form-group">
+                          <label for="favorite-series">Série préférée</label>
+                          <div class="input-icon">
+                            <i class="fa fa-tv"></i>
+                            <input type="text" id="favorite-series" name="favorite-series" placeholder="Ex : Arcane">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="signup-form-group">
+                          <label for="favorite-film">Film préféré</label>
+                          <div class="input-icon">
+                            <i class="fa fa-film"></i>
+                            <input type="text" id="favorite-film" name="favorite-film" placeholder="Ex : Inception">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="signup-form-group">
+                          <label for="favorite-music">Musique préférée</label>
+                          <div class="input-icon">
+                            <i class="fa fa-music"></i>
+                            <input type="text" id="favorite-music" name="favorite-music" placeholder="Ex : Afrobeat">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="signup-form-group">
+                          <label for="favorite-artist">Artiste préféré</label>
+                          <div class="input-icon">
+                            <i class="fa fa-microphone"></i>
+                            <input type="text" id="favorite-artist" name="favorite-artist" placeholder="Ex : Burna Boy">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="signup-form-group">
+                          <label for="favorite-anime">Anime préféré</label>
+                          <div class="input-icon">
+                            <i class="fa fa-star"></i>
+                            <input type="text" id="favorite-anime" name="favorite-anime" placeholder="Ex : One Piece">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="signup-form-group">
+                          <label for="favorite-book">Livre préféré</label>
+                          <div class="input-icon">
+                            <i class="fa fa-book"></i>
+                            <input type="text" id="favorite-book" name="favorite-book" placeholder="Ex : Le Petit Prince">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="signup-form-group">
+                          <label for="favorite-brand">Marque préférée</label>
+                          <div class="input-icon">
+                            <i class="fa fa-tag"></i>
+                            <input type="text" id="favorite-brand" name="favorite-brand" placeholder="Ex : Nike">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="preferences-section">
+                    <h5>Ajouter une préférence</h5>
+                    <p class="section-note">Ajoute de nouvelles préférences comme plat préféré, hobby, sport, etc.</p>
+                    <div class="row align-items-end custom-preference-inputs">
+                      <div class="col-md-5">
+                        <div class="signup-form-group">
+                          <label for="custom-preference-name">Nom de la préférence</label>
+                          <div class="input-icon">
+                            <i class="fa fa-pencil"></i>
+                            <input type="text" id="custom-preference-name" name="custom-preference-name" placeholder="Ex : Plat préféré">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="signup-form-group">
+                          <label for="custom-preference-value">Valeur</label>
+                          <div class="input-icon">
+                            <i class="fa fa-heart"></i>
+                            <input type="text" id="custom-preference-value" name="custom-preference-value" placeholder="Ex : Sushi">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="signup-form-group">
+                          <div class="main-button">
+                            <button type="button" id="add-preference-btn">Ajouter</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p id="custom-preference-feedback" class="custom-preference-feedback" aria-live="polite"></p>
+                    <div id="custom-preferences" class="row custom-preferences"></div>
+                  </div>
+
+                  <div class="preferences-section">
+                    <h5>Ton top 3</h5>
+                    <p class="section-note">Sélectionne tes trois préférences favorites ou laisse vide pour configurer plus tard.</p>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="signup-form-group">
+                          <label for="top-choice-1">Top 1</label>
+                          <div class="input-icon">
+                            <i class="fa fa-trophy"></i>
+                            <input type="text" id="top-choice-1" name="top-choice-1" placeholder="Ex : Série préférée">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="signup-form-group">
+                          <label for="top-choice-2">Top 2</label>
+                          <div class="input-icon">
+                            <i class="fa fa-trophy"></i>
+                            <input type="text" id="top-choice-2" name="top-choice-2" placeholder="Ex : Plat préféré">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="signup-form-group">
+                          <label for="top-choice-3">Top 3</label>
+                          <div class="input-icon">
+                            <i class="fa fa-trophy"></i>
+                            <input type="text" id="top-choice-3" name="top-choice-3" placeholder="Ex : Artiste préféré">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="signup-form-group passions-actions">
+                    <div class="main-button">
+                      <button type="submit">Enregistrer et continuer</button>
+                    </div>
+                    <a class="secondary-button" href="profile.html">Passer pour plus tard</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Passions Form End ***** -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
+          
+          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    const preferenceNameInput = document.getElementById('custom-preference-name');
+    const preferenceValueInput = document.getElementById('custom-preference-value');
+    const addPreferenceButton = document.getElementById('add-preference-btn');
+    const customPreferencesContainer = document.getElementById('custom-preferences');
+    const feedback = document.getElementById('custom-preference-feedback');
+    let customPreferenceCount = 0;
+
+    const clearFeedback = () => {
+      feedback.textContent = '';
+    };
+
+    const addCustomPreference = () => {
+      const name = preferenceNameInput.value.trim();
+      const value = preferenceValueInput.value.trim();
+
+      if (!name || !value) {
+        feedback.textContent = 'Ajoute un nom et une valeur pour enregistrer une nouvelle préférence.';
+        return;
+      }
+
+      clearFeedback();
+      customPreferenceCount += 1;
+
+      const column = document.createElement('div');
+      column.className = 'col-md-6';
+
+      const group = document.createElement('div');
+      group.className = 'signup-form-group';
+
+      const label = document.createElement('label');
+      const inputId = `custom-preference-${customPreferenceCount}`;
+      label.setAttribute('for', inputId);
+      label.textContent = name;
+
+      const iconWrapper = document.createElement('div');
+      iconWrapper.className = 'input-icon';
+
+      const icon = document.createElement('i');
+      icon.className = 'fa fa-star';
+
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.id = inputId;
+      input.name = `custom-preference-${customPreferenceCount}`;
+      input.value = value;
+      input.placeholder = `Ex : ${value}`;
+
+      iconWrapper.appendChild(icon);
+      iconWrapper.appendChild(input);
+      group.appendChild(label);
+      group.appendChild(iconWrapper);
+      column.appendChild(group);
+      customPreferencesContainer.appendChild(column);
+
+      preferenceNameInput.value = '';
+      preferenceValueInput.value = '';
+      preferenceNameInput.focus();
+    };
+
+    const handleEnter = (event) => {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        addCustomPreference();
+      }
+    };
+
+    addPreferenceButton.addEventListener('click', addCustomPreference);
+    preferenceNameInput.addEventListener('keydown', handleEnter);
+    preferenceValueInput.addEventListener('keydown', handleEnter);
+  </script>
+
+  </body>
+
+</html>

@@ -1777,6 +1777,85 @@ Sign Up Page Style
 
 /* 
 ---------------------------------------------
+Passions Page Style
+--------------------------------------------- 
+*/
+
+.passions-form-container {
+  background-color: #1f2122;
+  border-radius: 23px;
+  padding: 45px;
+  margin: 0 auto;
+}
+
+.passions-form-container .heading-section {
+  margin-bottom: 30px;
+}
+
+.passions-form-container .preferences-section {
+  margin-bottom: 35px;
+}
+
+.passions-form-container .preferences-section h5 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.passions-form-container .section-note {
+  color: #666;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.custom-preference-inputs .signup-form-group {
+  margin-bottom: 15px;
+}
+
+.custom-preference-feedback {
+  color: #ec6090;
+  font-size: 13px;
+  margin: 5px 0 15px;
+}
+
+.custom-preferences .signup-form-group {
+  margin-bottom: 20px;
+}
+
+.passions-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.passions-actions .main-button button {
+  width: auto;
+  min-width: 200px;
+}
+
+.passions-actions .secondary-button {
+  border: 1px solid #e75e8d;
+  color: #e75e8d;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+}
+
+.passions-actions .secondary-button:hover {
+  background-color: #e75e8d;
+  color: #fff;
+}
+
+/* 
+---------------------------------------------
 Responsive Style
 --------------------------------------------- 
 */
@@ -1791,6 +1870,17 @@ body {
   }
   .signup-form-container {
     padding: 30px 20px;
+  }
+  .passions-form-container {
+    padding: 30px 20px;
+  }
+  .passions-actions {
+    flex-direction: column;
+  }
+  .passions-actions .main-button button,
+  .passions-actions .secondary-button {
+    width: 100%;
+    text-align: center;
   }
   .main-banner {
     text-align: center;
