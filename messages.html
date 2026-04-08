@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Cyborg - Messages</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Search End ***** -->
+                    <div class="search-input">
+                      <form id="search" action="#">
+                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                        <i class="fa fa-search"></i>
+                      </form>
+                    </div>
+                    <!-- ***** Search End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse</a></li>
+                        <li><a href="details.html">Details</a></li>
+                        <li><a href="streams.html">Streams</a></li>
+                        <li><a href="messages.html" class="active">Messages</a></li>
+                        <li><a href="profile.html">Profile <img src="assets/images/profile-header.jpg" alt=""></a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Messages Section Start ***** -->
+          <div class="messages-section">
+            <div class="row no-gutters" style="gap:0;">
+
+              <!-- Contacts / Conversations list -->
+              <div class="col-lg-4 col-md-5">
+                <div class="chat-contacts">
+                  <div class="chat-contacts-header">
+                    <h5><i class="fa fa-comments"></i> Messages</h5>
+                    <div class="chat-search">
+                      <i class="fa fa-search"></i>
+                      <input type="text" id="contact-search" placeholder="Search conversations..." oninput="filterContacts(this.value)">
+                    </div>
+                  </div>
+                  <ul class="contact-list" id="contact-list">
+                    <li class="contact-item active" data-user="0" onclick="openChat(0)">
+                      <div class="contact-avatar">
+                        <img src="assets/images/avatar-01.jpg" alt="ShadowByte">
+                        <span class="status-dot online"></span>
+                      </div>
+                      <div class="contact-info">
+                        <div class="contact-meta">
+                          <h6>ShadowByte</h6>
+                          <span class="msg-time">2m ago</span>
+                        </div>
+                        <p class="last-message">GG on that last match! Ready for another round?</p>
+                      </div>
+                      <span class="unread-badge">2</span>
+                    </li>
+                    <li class="contact-item" data-user="1" onclick="openChat(1)">
+                      <div class="contact-avatar">
+                        <img src="assets/images/avatar-02.jpg" alt="NeonFox">
+                        <span class="status-dot online"></span>
+                      </div>
+                      <div class="contact-info">
+                        <div class="contact-meta">
+                          <h6>NeonFox</h6>
+                          <span class="msg-time">15m ago</span>
+                        </div>
+                        <p class="last-message">Can you share your build for the new update?</p>
+                      </div>
+                    </li>
+                    <li class="contact-item" data-user="2" onclick="openChat(2)">
+                      <div class="contact-avatar">
+                        <img src="assets/images/avatar-03.jpg" alt="CyberWolf">
+                        <span class="status-dot away"></span>
+                      </div>
+                      <div class="contact-info">
+                        <div class="contact-meta">
+                          <h6>CyberWolf</h6>
+                          <span class="msg-time">1h ago</span>
+                        </div>
+                        <p class="last-message">Stream starts at 9PM tonight 🎮</p>
+                      </div>
+                    </li>
+                    <li class="contact-item" data-user="3" onclick="openChat(3)">
+                      <div class="contact-avatar">
+                        <img src="assets/images/avatar-04.jpg" alt="PixelQueen">
+                        <span class="status-dot offline"></span>
+                      </div>
+                      <div class="contact-info">
+                        <div class="contact-meta">
+                          <h6>PixelQueen</h6>
+                          <span class="msg-time">3h ago</span>
+                        </div>
+                        <p class="last-message">Nice clip! You should post that one.</p>
+                      </div>
+                      <span class="unread-badge">5</span>
+                    </li>
+                    <li class="contact-item" data-user="4" onclick="openChat(4)">
+                      <div class="contact-avatar">
+                        <img src="assets/images/profile-header.jpg" alt="DarkMatter">
+                        <span class="status-dot online"></span>
+                      </div>
+                      <div class="contact-info">
+                        <div class="contact-meta">
+                          <h6>DarkMatter</h6>
+                          <span class="msg-time">Yesterday</span>
+                        </div>
+                        <p class="last-message">Tournament registration closes Friday!</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Chat Window -->
+              <div class="col-lg-8 col-md-7">
+                <div class="chat-window" id="chat-window">
+
+                  <!-- Chat Header -->
+                  <div class="chat-header" id="chat-header">
+                    <div class="chat-user-info">
+                      <div class="chat-avatar">
+                        <img id="chat-avatar-img" src="assets/images/avatar-01.jpg" alt="">
+                        <span class="status-dot online" id="chat-status-dot"></span>
+                      </div>
+                      <div>
+                        <h6 id="chat-user-name">ShadowByte</h6>
+                        <small id="chat-user-status" class="text-online">Online</small>
+                      </div>
+                    </div>
+                    <div class="chat-actions">
+                      <a href="#" title="Voice Call"><i class="fa fa-phone"></i></a>
+                      <a href="#" title="Video Call"><i class="fa fa-video-camera"></i></a>
+                      <a href="#" title="More Options"><i class="fa fa-ellipsis-v"></i></a>
+                    </div>
+                  </div>
+
+                  <!-- Messages Area -->
+                  <div class="chat-messages" id="chat-messages">
+
+                    <!-- Conversation 0: ShadowByte -->
+                    <div class="chat-conversation active" id="conversation-0">
+                      <div class="chat-date-divider"><span>Today</span></div>
+
+                      <div class="message incoming">
+                        <img src="assets/images/avatar-01.jpg" alt="" class="msg-avatar">
+                        <div class="message-bubble">
+                          <p>Hey! Are you going to play Fortnite tonight?</p>
+                          <span class="message-time">18:42</span>
+                        </div>
+                      </div>
+                      <div class="message outgoing">
+                        <div class="message-bubble">
+                          <p>Yeah I was planning to! What time works for you?</p>
+                          <span class="message-time">18:44</span>
+                        </div>
+                      </div>
+                      <div class="message incoming">
+                        <img src="assets/images/avatar-01.jpg" alt="" class="msg-avatar">
+                        <div class="message-bubble">
+                          <p>Around 9PM? We can squad up with CyberWolf too 🎮</p>
+                          <span class="message-time">18:45</span>
+                        </div>
+                      </div>
+                      <div class="message outgoing">
+                        <div class="message-bubble">
+                          <p>Sounds perfect! I'll be ready 💪</p>
+                          <span class="message-time">18:46</span>
+                        </div>
+                      </div>
+                      <div class="message incoming">
+                        <img src="assets/images/avatar-01.jpg" alt="" class="msg-avatar">
+                        <div class="message-bubble">
+                          <p>GG on that last match! Ready for another round?</p>
+                          <span class="message-time">19:02</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Conversation 1: NeonFox -->
+                    <div class="chat-conversation" id="conversation-1">
+                      <div class="chat-date-divider"><span>Today</span></div>
+
+                      <div class="message incoming">
+                        <img src="assets/images/avatar-02.jpg" alt="" class="msg-avatar">
+                        <div class="message-bubble">
+                          <p>Hey, love your stream highlights!</p>
+                          <span class="message-time">17:10</span>
+                        </div>
+                      </div>
+                      <div class="message outgoing">
+                        <div class="message-bubble">
+                          <p>Thanks! Took a lot of practice 😄</p>
+                          <span class="message-time">17:12</span>
+                        </div>
+                      </div>
+                      <div class="message incoming">
+                        <img src="assets/images/avatar-02.jpg" alt="" class="msg-avatar">
+                        <div class="message-bubble">
+                          <p>Can you share your build for the new update?</p>
+                          <span class="message-time">17:13</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Conversation 2: CyberWolf -->
+                    <div class="chat-conversation" id="conversation-2">
+                      <div class="chat-date-divider"><span>Today</span></div>
+
+                      <div class="message incoming">
+                        <img src="assets/images/avatar-03.jpg" alt="" class="msg-avatar">
+                        <div class="message-bubble">
+                          <p>Don't forget about the squad game tonight!</p>
+                          <span class="message-time">16:00</span>
+                        </div>
+                      </div>
+                      <div class="message outgoing">
+                        <div class="message-bubble">
+                          <p>On it! What game are we playing?</p>
+                          <span class="message-time">16:05</span>
+                        </div>
+                      </div>
+                      <div class="message incoming">
+                        <img src="assets/images/avatar-03.jpg" alt="" class="msg-avatar">
+                        <div class="message-bubble">
+                          <p>Stream starts at 9PM tonight 🎮</p>
+                          <span class="message-time">16:07</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Conversation 3: PixelQueen -->
+                    <div class="chat-conversation" id="conversation-3">
+                      <div class="chat-date-divider"><span>Today</span></div>
+
+                      <div class="message incoming">
+                        <img src="assets/images/avatar-04.jpg" alt="" class="msg-avatar">
+                        <div class="message-bubble">
+                          <p>I watched your stream from last night, you were amazing!</p>
+                          <span class="message-time">14:00</span>
+                        </div>
+                      </div>
+                      <div class="message outgoing">
+                        <div class="message-bubble">
+                          <p>Haha thank you, it was a fun session!</p>
+                          <span class="message-time">14:30</span>
+                        </div>
+                      </div>
+                      <div class="message incoming">
+                        <img src="assets/images/avatar-04.jpg" alt="" class="msg-avatar">
+                        <div class="message-bubble">
+                          <p>That clutch play in round 5 was insane 🔥</p>
+                          <span class="message-time">14:31</span>
+                        </div>
+                      </div>
+                      <div class="message outgoing">
+                        <div class="message-bubble">
+                          <p>I got lucky honestly 😂</p>
+                          <span class="message-time">14:32</span>
+                        </div>
+                      </div>
+                      <div class="message incoming">
+                        <img src="assets/images/avatar-04.jpg" alt="" class="msg-avatar">
+                        <div class="message-bubble">
+                          <p>Nice clip! You should post that one.</p>
+                          <span class="message-time">14:33</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Conversation 4: DarkMatter -->
+                    <div class="chat-conversation" id="conversation-4">
+                      <div class="chat-date-divider"><span>Yesterday</span></div>
+
+                      <div class="message outgoing">
+                        <div class="message-bubble">
+                          <p>Hey, are you joining the tournament this weekend?</p>
+                          <span class="message-time">20:00</span>
+                        </div>
+                      </div>
+                      <div class="message incoming">
+                        <img src="assets/images/profile-header.jpg" alt="" class="msg-avatar">
+                        <div class="message-bubble">
+                          <p>Definitely! Which game mode are they running?</p>
+                          <span class="message-time">20:05</span>
+                        </div>
+                      </div>
+                      <div class="message outgoing">
+                        <div class="message-bubble">
+                          <p>Solo Battle Royale. Prize pool is 500€!</p>
+                          <span class="message-time">20:06</span>
+                        </div>
+                      </div>
+                      <div class="message incoming">
+                        <img src="assets/images/profile-header.jpg" alt="" class="msg-avatar">
+                        <div class="message-bubble">
+                          <p>Tournament registration closes Friday!</p>
+                          <span class="message-time">20:10</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- Messages Area End -->
+
+                  <!-- Message Input -->
+                  <div class="chat-input-area">
+                    <div class="chat-input-wrapper">
+                      <button class="input-action-btn" title="Attach file" onclick="return false;">
+                        <i class="fa fa-paperclip"></i>
+                      </button>
+                      <input type="text" id="message-input" placeholder="Type a message…" onkeydown="handleEnter(event)">
+                      <button class="input-action-btn emoji-btn" title="Emoji" onclick="return false;">
+                        <i class="fa fa-smile-o"></i>
+                      </button>
+                      <button class="send-btn" id="send-btn" onclick="sendMessage()">
+                        <i class="fa fa-paper-plane"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Chat Window End -->
+
+            </div>
+          </div>
+          <!-- ***** Messages Section End ***** -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved.
+          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/messages.js"></script>
+
+</body>
+
+</html>
