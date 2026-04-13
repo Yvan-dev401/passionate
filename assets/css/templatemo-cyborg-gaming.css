@@ -339,8 +339,8 @@ Header Style
   height: 70px!important;
   position: fixed!important;
   top: 0!important;
-  left: 0;
-  right: 0;
+  left: 20px;
+  right: 20px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
@@ -354,8 +354,8 @@ Header Style
   position: absolute;
   height: 70px;
   top: 15px;
-  left: 0;
-  right: 0;
+  left: 20px;
+  right: 20px;
   z-index: 100;
   -webkit-transition: all .5s ease 0s;
   -moz-transition: all .5s ease 0s;
@@ -635,6 +635,8 @@ Header Style
 @media (max-width: 992px) {
   .header-area {
     top: 0;
+    left: 0;
+    right: 0;
   }
   .header-area .main-nav {
     background-color: transparent;
@@ -648,6 +650,10 @@ Header Style
     position: absolute;
     left: 30px;
     top: 15px;
+  }
+  .background-header {
+    left: 0!important;
+    right: 0!important;
   }
   .background-header .main-nav .logo {
     top: 0px;

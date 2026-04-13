@@ -27,8 +27,15 @@
 	  var scroll = $(window).scrollTop();
 	  var box = $('.header-text').height();
 	  var header = $('header').height();
+	  var scrollTrigger = 0;
 
-	  if (scroll >= box - header) {
+	  if (typeof box === 'number' && !isNaN(box)) {
+	    scrollTrigger = box - header;
+	  } else {
+	    scrollTrigger = 80;
+	  }
+
+	  if (scroll >= scrollTrigger) {
 	    $("header").addClass("background-header");
 	  } else {
 	    $("header").removeClass("background-header");
