@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
   <head>
 
     <meta charset="utf-8">
+    <meta name="description" content="Passionate — le réseau qui relie les passionnés. Partage tes séries, films, musiques et univers favoris, et rencontre des gens qui les aiment autant que toi.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Cyborg - Awesome HTML5 Template</title>
+    <title>Passionate — Rencontre des gens qui partagent tes passions</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/passionate-ui.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 <!--
 
@@ -27,9 +29,12 @@ TemplateMo 579 Cyborg Gaming
 https://templatemo.com/tm-579-cyborg-gaming
 
 -->
+    <script>document.documentElement.className += ' pa-js';</script>
   </head>
 
 <body>
+
+  <a class="pa-skip-link" href="#main-content">Aller au contenu principal</a>
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -51,29 +56,30 @@ https://templatemo.com/tm-579-cyborg-gaming
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
+                    <a href="index.html" class="logo pa-logo" aria-label="Passionate — accueil">
+                        <span class="pa-logo-mark" aria-hidden="true"><i class="fa fa-heart"></i></span>
+                        <span>Passion<em>ate</em></span>
                     </a>
                     <!-- ***** Logo End ***** -->
-                    <!-- ***** Search End ***** -->
+                    <!-- ***** Search Start ***** -->
                     <div class="search-input">
-                      <form id="search" action="#">
-                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
-                        <i class="fa fa-search"></i>
+                      <form id="search" action="#" role="search">
+                        <label class="sr-only" for="searchText">Rechercher</label>
+                        <input type="text" placeholder="Rechercher une passion, un membre…" id="searchText" name="searchKeyword" autocomplete="off">
+                        <i class="fa fa-search" aria-hidden="true"></i>
                       </form>
                     </div>
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="browse.html">Browse</a></li>
-                        <li><a href="details.html">Details</a></li>
-                        <li><a href="streams.html">Streams</a></li>
-                        <li><a href="passions.html">Passions</a></li>
+                        <li><a href="index.html" class="active">Accueil</a></li>
+                        <li><a href="browse.html">Découvrir</a></li>
+                        <li><a href="streams.html">Lives</a></li>
+                        <li><a href="passions.html">Mes passions</a></li>
                         <li><a href="messages.html">Messages</a></li>
-                        <li><a href="signup.html">Sign Up</a></li>
-                        <li><a href="profile.html">Profile <img src="assets/images/profile-header.jpg" alt=""></a></li>
-                    </ul>   
+                        <li class="nav-cta"><a href="login.html">Se connecter</a></li>
+                        <li><a href="profile.html">Profil <img src="assets/images/profile-header.jpg" alt="Photo de profil"></a></li>
+                    </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
@@ -85,192 +91,351 @@ https://templatemo.com/tm-579-cyborg-gaming
   </header>
   <!-- ***** Header Area End ***** -->
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="page-content">
+  <main class="pa-showcase" id="main-content">
 
-          <!-- ***** Banner Start ***** -->
-          <div class="main-banner">
-            <div class="row">
-              <div class="col-lg-7">
-                <div class="header-text">
-                  <h6>Welcome To Cyborg</h6>
-                  <h4><em>Browse</em> Our Popular Games Here</h4>
-                  <div class="main-button">
-                    <a href="browse.html">Browse Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+    <!-- ***** Hero Start ***** -->
+    <section class="pa-hero">
+      <div class="container">
+        <div class="pa-hero-inner">
+          <span class="pa-eyebrow"><i class="fa fa-heart" aria-hidden="true"></i> Le réseau des passionnés</span>
+          <h1>Tes passions méritent<br>d'être <em>partagées</em></h1>
+          <p class="pa-lead">Séries, films, musiques, animés, jeux, livres&nbsp;: dis-nous ce qui te fait vibrer et Passionate te présente celles et ceux qui vibrent pareil. Pas d'algorithme opaque, juste des goûts en commun.</p>
+          <div class="pa-actions">
+            <a href="signup.html" class="pa-btn pa-btn-primary"><i class="fa fa-user-plus" aria-hidden="true"></i> Créer mon compte</a>
+            <a href="browse.html" class="pa-btn pa-btn-ghost"><i class="fa fa-compass" aria-hidden="true"></i> Explorer la communauté</a>
           </div>
-          <!-- ***** Banner End ***** -->
+          <p class="pa-hero-note"><i class="fa fa-check-circle" aria-hidden="true"></i>Gratuit, sans engagement — deux minutes suffisent pour créer ton profil.</p>
+        </div>
 
-          <!-- ***** Most Popular Start ***** -->
-          <div class="most-popular">
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="heading-section">
-                  <h4><em>Most Popular</em> Right Now</h4>
-                </div>
-                <div class="row">
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="assets/images/popular-01.jpg" alt="">
-                      <h4>Fortnite<br><span>Sandbox</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="assets/images/popular-02.jpg" alt="">
-                      <h4>PubG<br><span>Battle S</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="assets/images/popular-03.jpg" alt="">
-                      <h4>Dota2<br><span>Steam-X</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="assets/images/popular-04.jpg" alt="">
-                      <h4>CS-GO<br><span>Legendary</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="item">
-                      <div class="row">
-                        <div class="col-lg-6 col-sm-6">
-                          <div class="item inner-item">
-                            <img src="assets/images/popular-05.jpg" alt="">
-                            <h4>Mini Craft<br><span>Legendary</span></h4>
-                            <ul>
-                              <li><i class="fa fa-star"></i> 4.8</li>
-                              <li><i class="fa fa-download"></i> 2.3M</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
-                          <div class="item">
-                            <img src="assets/images/popular-06.jpg" alt="">
-                            <h4>Eagles Fly<br><span>Matrix Games</span></h4>
-                            <ul>
-                              <li><i class="fa fa-star"></i> 4.8</li>
-                              <li><i class="fa fa-download"></i> 2.3M</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="assets/images/popular-07.jpg" alt="">
-                      <h4>Warface<br><span>Max 3D</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="item">
-                      <img src="assets/images/popular-08.jpg" alt="">
-                      <h4>Warcraft<br><span>Legend</span></h4>
-                      <ul>
-                        <li><i class="fa fa-star"></i> 4.8</li>
-                        <li><i class="fa fa-download"></i> 2.3M</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <div class="main-button">
-                      <a href="browse.html">Discover Popular</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="pa-stats">
+          <div class="pa-stat">
+            <strong data-count-to="120" data-count-suffix="K">120K</strong>
+            <span>Membres actifs</span>
           </div>
-          <!-- ***** Most Popular End ***** -->
-
-          <!-- ***** Gaming Library Start ***** -->
-          <div class="gaming-library">
-            <div class="col-lg-12">
-              <div class="heading-section">
-                <h4><em>Your Gaming</em> Library</h4>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="assets/images/game-01.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>Dota 2</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>24/08/2036</span></li>
-                  <li><h4>Hours Played</h4><span>634 H 22 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
-                </ul>
-              </div>
-              <div class="item">
-                <ul>
-                  <li><img src="assets/images/game-02.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>Fortnite</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>22/06/2036</span></li>
-                  <li><h4>Hours Played</h4><span>740 H 52 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button"><a href="#">Donwload</a></div></li>
-                </ul>
-              </div>
-              <div class="item last-item">
-                <ul>
-                  <li><img src="assets/images/game-03.jpg" alt="" class="templatemo-item"></li>
-                  <li><h4>CS-GO</h4><span>Sandbox</span></li>
-                  <li><h4>Date Added</h4><span>21/04/2036</span></li>
-                  <li><h4>Hours Played</h4><span>892 H 14 Mins</span></li>
-                  <li><h4>Currently</h4><span>Downloaded</span></li>
-                  <li><div class="main-border-button border-no-active"><a href="#">Donwloaded</a></div></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="main-button">
-                <a href="profile.html">View Your Library</a>
-              </div>
-            </div>
+          <div class="pa-stat">
+            <strong data-count-to="45" data-count-suffix="+">45+</strong>
+            <span>Univers de passion</span>
           </div>
-          <!-- ***** Gaming Library End ***** -->
+          <div class="pa-stat">
+            <strong data-count-to="3.2" data-count-decimals="1" data-count-suffix="M">3.2M</strong>
+            <span>Messages échangés</span>
+          </div>
+          <div class="pa-stat">
+            <strong data-count-to="4.9" data-count-decimals="1" data-count-suffix="/5">4.9/5</strong>
+            <span>Note moyenne</span>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  
-  <footer>
+    </section>
+    <!-- ***** Hero End ***** -->
+
+    <!-- ***** Fonctionnalités Start ***** -->
+    <section class="pa-feature pa-reveal">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="pa-feature-media">
+              <img src="assets/images/feature-left.jpg" alt="Des membres réunis autour d'une même passion">
+              <span class="pa-feature-badge"><i class="fa fa-users" aria-hidden="true"></i> 45 univers à rejoindre</span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="pa-feature-text">
+              <h3>Rejoins des <em>cercles</em> qui te ressemblent</h3>
+              <p>Chaque passion a son espace&nbsp;: un salon dédié où l'on partage les sorties, les théories et les coups de cœur. Rejoins-en autant que tu veux, quitte-les quand tu veux.</p>
+              <ul class="pa-check-list">
+                <li><i class="fa fa-check" aria-hidden="true"></i> Des salons thématiques par série, artiste, jeu ou univers</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> Des suggestions basées sur ce que tu as réellement renseigné</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> Aucune obligation de tout remplir&nbsp;: complète à ton rythme</li>
+              </ul>
+              <div class="main-button"><a href="browse.html">Voir les cercles</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pa-feature pa-reveal">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 pa-col-media-first">
+            <div class="pa-feature-text">
+              <h3>Discute <em>en direct</em>, sans détour</h3>
+              <p>Une messagerie claire et rapide, pensée pour les conversations qui comptent. Retrouve tes échanges, tes groupes et tes nouvelles rencontres au même endroit.</p>
+              <ul class="pa-check-list">
+                <li><i class="fa fa-check" aria-hidden="true"></i> Messages privés et discussions de groupe</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> Partage de morceaux, extraits et recommandations</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> Contrôle total&nbsp;: qui peut t'écrire, et quand</li>
+              </ul>
+              <div class="main-button"><a href="messages.html">Ouvrir la messagerie</a></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="pa-feature-media">
+              <img src="assets/images/feature-right.jpg" alt="Conversations en direct entre membres">
+              <span class="pa-feature-badge"><i class="fa fa-comments" aria-hidden="true"></i> Réponses en quelques secondes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pa-feature pa-reveal">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="pa-feature-media">
+              <img src="assets/images/stream-01.jpg" alt="Un live diffusé sur Passionate">
+              <span class="pa-feature-badge"><i class="fa fa-circle" aria-hidden="true"></i> En direct maintenant</span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="pa-feature-text">
+              <h3>Vis tes passions <em>en live</em></h3>
+              <p>Sessions d'écoute, visionnages commentés, discussions ouvertes&nbsp;: lance un live ou rejoins celui d'un membre et vibre au même moment que les autres.</p>
+              <ul class="pa-check-list">
+                <li><i class="fa fa-check" aria-hidden="true"></i> Lives publics ou réservés à ton cercle</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> Chat en temps réel pendant la diffusion</li>
+                <li><i class="fa fa-check" aria-hidden="true"></i> Rediffusions pour ne rien rater</li>
+              </ul>
+              <div class="main-button"><a href="streams.html">Voir les lives</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** Fonctionnalités End ***** -->
+
+    <!-- ***** Atouts Start ***** -->
+    <section class="pa-section pa-reveal">
+      <div class="container">
+        <div class="pa-section-head">
+          <span class="pa-eyebrow">Pourquoi Passionate</span>
+          <h2 class="pa-title">Une communauté <em>saine</em>, par construction</h2>
+          <p class="pa-lead">On ne mise pas sur le temps passé à scroller, mais sur la qualité des rencontres. Tout est pensé pour que tu trouves les bonnes personnes vite, et en sécurité.</p>
+        </div>
+        <div class="pa-cards">
+          <div class="pa-card">
+            <span class="pa-card-icon"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+            <h4>Des affinités réelles</h4>
+            <p>Les suggestions partent de tes passions déclarées, pas d'un profilage silencieux. Tu vois pourquoi une personne t'est proposée.</p>
+          </div>
+          <div class="pa-card">
+            <span class="pa-card-icon"><i class="fa fa-shield-alt" aria-hidden="true"></i></span>
+            <h4>Modération et respect</h4>
+            <p>Signalement en un clic, règles claires et outils de blocage. Un espace où l'on peut parler de ce qu'on aime sans se faire descendre.</p>
+          </div>
+          <div class="pa-card">
+            <span class="pa-card-icon"><i class="fa fa-sliders" aria-hidden="true"></i></span>
+            <h4>Tu gardes la main</h4>
+            <p>Profil visible ou discret, passions publiques ou privées, messages ouverts ou filtrés&nbsp;: chaque réglage t'appartient.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** Atouts End ***** -->
+
+    <!-- ***** Univers Start ***** -->
+    <section class="pa-section pa-section--tight pa-reveal">
+      <div class="container">
+        <div class="pa-section-head">
+          <span class="pa-eyebrow">Les univers</span>
+          <h2 class="pa-title">Explore ce qui te <em>fait vibrer</em></h2>
+          <p class="pa-lead">Des dizaines d'univers, et autant de communautés à rejoindre dès ton inscription.</p>
+        </div>
+        <div class="pa-tags">
+          <a href="details.html" class="pa-tag">
+            <img src="assets/images/popular-01.jpg" alt="Univers Séries">
+            <span>Séries<small>18 240 membres</small></span>
+          </a>
+          <a href="details.html" class="pa-tag">
+            <img src="assets/images/popular-02.jpg" alt="Univers Cinéma">
+            <span>Cinéma<small>15 806 membres</small></span>
+          </a>
+          <a href="details.html" class="pa-tag">
+            <img src="assets/images/popular-03.jpg" alt="Univers Musique">
+            <span>Musique<small>21 133 membres</small></span>
+          </a>
+          <a href="details.html" class="pa-tag">
+            <img src="assets/images/popular-04.jpg" alt="Univers Animés">
+            <span>Animés<small>12 970 membres</small></span>
+          </a>
+          <a href="details.html" class="pa-tag">
+            <img src="assets/images/popular-05.jpg" alt="Univers Jeux vidéo">
+            <span>Jeux vidéo<small>24 512 membres</small></span>
+          </a>
+          <a href="details.html" class="pa-tag">
+            <img src="assets/images/popular-06.jpg" alt="Univers Livres">
+            <span>Livres<small>9 428 membres</small></span>
+          </a>
+          <a href="details.html" class="pa-tag">
+            <img src="assets/images/popular-07.jpg" alt="Univers Sport">
+            <span>Sport<small>11 067 membres</small></span>
+          </a>
+          <a href="details.html" class="pa-tag">
+            <img src="assets/images/popular-08.jpg" alt="Univers Art et création">
+            <span>Art &amp; création<small>7 315 membres</small></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ***** Univers End ***** -->
+
+    <!-- ***** Étapes Start ***** -->
+    <section class="pa-section pa-reveal">
+      <div class="container">
+        <div class="pa-section-head">
+          <span class="pa-eyebrow">Comment ça marche</span>
+          <h2 class="pa-title">Trois étapes, <em>et c'est parti</em></h2>
+        </div>
+        <div class="pa-steps">
+          <div class="pa-step">
+            <span class="pa-step-num">1</span>
+            <h4>Crée ton profil</h4>
+            <p>Un pseudo, une photo si tu veux, et te voilà prêt. Aucune information sensible n'est demandée.</p>
+          </div>
+          <div class="pa-step">
+            <span class="pa-step-num">2</span>
+            <h4>Renseigne tes passions</h4>
+            <p>Série, film, musique, artiste, animé, livre, marque… Remplis ce que tu veux, reviens compléter plus tard.</p>
+          </div>
+          <div class="pa-step">
+            <span class="pa-step-num">3</span>
+            <h4>Rencontre et échange</h4>
+            <p>On te propose des membres aux goûts proches. Lance la conversation, rejoins un cercle, participe aux lives.</p>
+          </div>
+        </div>
+        <div class="pa-actions" style="margin-top: 44px;">
+          <a href="passions.html" class="pa-btn pa-btn-primary">Renseigner mes passions</a>
+        </div>
+      </div>
+    </section>
+    <!-- ***** Étapes End ***** -->
+
+    <!-- ***** Témoignages Start ***** -->
+    <section class="pa-section pa-section--tight pa-reveal">
+      <div class="container">
+        <div class="pa-section-head">
+          <span class="pa-eyebrow">Ils y sont déjà</span>
+          <h2 class="pa-title">Ce que la <em>communauté</em> en dit</h2>
+        </div>
+        <div class="pa-quotes">
+          <div class="pa-quote">
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
+            <p>J'ai enfin trouvé des gens avec qui parler de mes séries sans être la seule à connaître. On a monté un visionnage hebdo en live.</p>
+            <div class="pa-quote-user">
+              <img src="assets/images/avatar-01.jpg" alt="">
+              <div>
+                <h6>Amina</h6>
+                <span>Cercle Séries &amp; Animés</span>
+              </div>
+            </div>
+          </div>
+          <div class="pa-quote">
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
+            <p>Le fait de partir des passions change tout. Les conversations démarrent toutes seules, on sait déjà de quoi parler.</p>
+            <div class="pa-quote-user">
+              <img src="assets/images/avatar-02.jpg" alt="">
+              <div>
+                <h6>Marco</h6>
+                <span>Cercle Musique</span>
+              </div>
+            </div>
+          </div>
+          <div class="pa-quote">
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
+            <p>Interface simple, ambiance respectueuse, et je choisis qui peut m'écrire. C'est exactement ce que je cherchais.</p>
+            <div class="pa-quote-user">
+              <img src="assets/images/avatar-03.jpg" alt="">
+              <div>
+                <h6>Lina</h6>
+                <span>Cercle Livres</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** Témoignages End ***** -->
+
+    <!-- ***** Appel à l'action Start ***** -->
+    <section class="pa-section pa-section--tight pa-reveal">
+      <div class="container">
+        <div class="pa-cta">
+          <h3>Prêt à rencontrer ta communauté&nbsp;?</h3>
+          <p>Rejoins Passionate et découvre les membres qui partagent tes univers. Ton premier cercle t'attend.</p>
+          <div class="pa-actions">
+            <a href="signup.html" class="pa-btn pa-btn-primary">Créer mon compte gratuitement</a>
+            <a href="login.html" class="pa-btn pa-btn-ghost">J'ai déjà un compte</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** Appel à l'action End ***** -->
+
+  </main>
+
+  <!-- ***** Footer Start ***** -->
+  <footer class="pa-footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
-          
-          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
+        <div class="col-lg-4 col-md-6 pa-footer-brand">
+          <a href="index.html" class="pa-logo" aria-label="Passionate — accueil">
+            <span class="pa-logo-mark" aria-hidden="true"><i class="fa fa-heart"></i></span>
+            <span>Passion<em>ate</em></span>
+          </a>
+          <p>Passionate rassemble celles et ceux qui vibrent pour les mêmes séries, musiques, jeux et univers. Partage ce que tu aimes, trouve ta communauté.</p>
+          <div class="pa-socials">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="X"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </div>
         </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Produit</h5>
+          <ul>
+            <li><a href="browse.html">Découvrir</a></li>
+            <li><a href="streams.html">Lives</a></li>
+            <li><a href="passions.html">Mes passions</a></li>
+            <li><a href="messages.html">Messages</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Communauté</h5>
+          <ul>
+            <li><a href="details.html">Groupes</a></li>
+            <li><a href="profile.html">Mon profil</a></li>
+            <li><a href="signup.html">Créer un compte</a></li>
+            <li><a href="login.html">Se connecter</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Ressources</h5>
+          <ul>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Règles de la communauté</a></li>
+            <li><a href="#">Sécurité</a></li>
+            <li><a href="#">Nous contacter</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Légal</h5>
+          <ul>
+            <li><a href="#">Confidentialité</a></li>
+            <li><a href="#">Conditions</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Mentions légales</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pa-footer-bottom">
+        <p>Copyright &copy; 2036 <a href="index.html">Passionate</a>. Tous droits réservés.</p>
+        <p>Design&nbsp;: <a href="https://templatemo.com" target="_blank" rel="noopener" title="free CSS templates">TemplateMo</a> — Distribué par <a href="https://themewagon.com" target="_blank" rel="noopener">ThemeWagon</a></p>
       </div>
     </div>
   </footer>
+  <!-- ***** Footer End ***** -->
 
 
   <!-- Scripts -->
@@ -283,6 +448,7 @@ https://templatemo.com/tm-579-cyborg-gaming
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/passionate-ui.js"></script>
 
 
   </body>
