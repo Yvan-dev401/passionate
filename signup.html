@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
   <head>
 
     <meta charset="utf-8">
+    <meta name="description" content="Passionate — le réseau qui relie les passionnés. Partage tes séries, films, musiques et univers favoris, et rencontre des gens qui les aiment autant que toi.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Cyborg - Sign Up</title>
+    <title>Passionate — Inscription</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,10 +20,14 @@
     <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/passionate-ui.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script>document.documentElement.className += ' pa-js';</script>
   </head>
 
 <body>
+
+  <a class="pa-skip-link" href="#main-content">Aller au contenu principal</a>
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -44,29 +49,30 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
+                    <a href="index.html" class="logo pa-logo" aria-label="Passionate — accueil">
+                        <span class="pa-logo-mark" aria-hidden="true"><i class="fa fa-heart"></i></span>
+                        <span>Passion<em>ate</em></span>
                     </a>
                     <!-- ***** Logo End ***** -->
-                    <!-- ***** Search End ***** -->
+                    <!-- ***** Search Start ***** -->
                     <div class="search-input">
-                      <form id="search" action="#">
-                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
-                        <i class="fa fa-search"></i>
+                      <form id="search" action="#" role="search">
+                        <label class="sr-only" for="searchText">Rechercher</label>
+                        <input type="text" placeholder="Rechercher une passion, un membre…" id="searchText" name="searchKeyword" autocomplete="off">
+                        <i class="fa fa-search" aria-hidden="true"></i>
                       </form>
                     </div>
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="browse.html">Browse</a></li>
-                        <li><a href="details.html">Details</a></li>
-                        <li><a href="streams.html">Streams</a></li>
-                        <li><a href="passions.html">Passions</a></li>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="browse.html">Découvrir</a></li>
+                        <li><a href="streams.html">Lives</a></li>
+                        <li><a href="passions.html">Mes passions</a></li>
                         <li><a href="messages.html">Messages</a></li>
-                        <li><a href="signup.html" class="active">Sign Up</a></li>
-                        <li><a href="profile.html">Profile <img src="assets/images/profile-header.jpg" alt=""></a></li>
-                    </ul>   
+                        <li class="nav-cta"><a href="login.html" class="active">Se connecter</a></li>
+                        <li><a href="profile.html">Profil <img src="assets/images/profile-header.jpg" alt="Photo de profil"></a></li>
+                    </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
@@ -81,56 +87,56 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <div class="page-content">
+        <div class="page-content" id="main-content">
 
           <!-- ***** Sign Up Form Start ***** -->
           <div class="row">
             <div class="col-lg-6 offset-lg-3">
               <div class="signup-form-container">
                 <div class="heading-section text-center">
-                  <h4><em>Create</em> Your Account</h4>
-                  <p>Join the Cyborg Gaming community and start your adventure today.</p>
+                  <h4><em>Crée</em> ton compte</h4>
+                  <p>Rejoins Passionate et trouve celles et ceux qui partagent tes passions.</p>
                 </div>
                 <form id="signup-form" action="#" method="post">
                   <div class="signup-form-group">
-                    <label for="username">Username</label>
+                    <label for="username">Pseudo</label>
                     <div class="input-icon">
                       <i class="fa fa-user"></i>
-                      <input type="text" id="username" name="username" placeholder="Choose a username" required>
+                      <input type="text" id="username" name="username" placeholder="Choisis un pseudo" required>
                     </div>
                   </div>
                   <div class="signup-form-group">
-                    <label for="email">Email Address</label>
+                    <label for="email">Adresse e-mail</label>
                     <div class="input-icon">
                       <i class="fa fa-envelope"></i>
-                      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                      <input type="email" id="email" name="email" placeholder="ton@email.com" required>
                     </div>
                   </div>
                   <div class="signup-form-group">
-                    <label for="password">Password</label>
+                    <label for="password">Mot de passe</label>
                     <div class="input-icon">
                       <i class="fa fa-lock"></i>
-                      <input type="password" id="password" name="password" placeholder="Create a password" required>
+                      <input type="password" id="password" name="password" placeholder="Au moins 8 caractères" required>
                     </div>
                   </div>
                   <div class="signup-form-group">
-                    <label for="confirm-password">Confirm Password</label>
+                    <label for="confirm-password">Confirme le mot de passe</label>
                     <div class="input-icon">
                       <i class="fa fa-lock"></i>
-                      <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+                      <input type="password" id="confirm-password" name="confirm-password" placeholder="Retape ton mot de passe" required>
                     </div>
                   </div>
                   <div class="signup-form-group checkbox-group">
                     <input type="checkbox" id="terms" name="terms" required>
-                    <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                    <label for="terms">J'accepte les <a href="#">conditions d'utilisation</a> et la <a href="#">politique de confidentialité</a></label>
                   </div>
                   <div class="signup-form-group text-center">
                     <div class="main-button">
-                      <button type="submit">Sign Up</button>
+                      <button type="submit">Créer mon compte</button>
                     </div>
                   </div>
                   <div class="signup-form-footer text-center">
-                    <p>Already have an account? <a href="login.html">Log In</a></p>
+                    <p>Tu as déjà un compte&nbsp;? <a href="login.html">Se connecter</a></p>
                   </div>
                 </form>
               </div>
@@ -143,17 +149,67 @@
     </div>
   </div>
   
-  <footer>
+  <!-- ***** Footer Start ***** -->
+  <footer class="pa-footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
-          
-          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
+        <div class="col-lg-4 col-md-6 pa-footer-brand">
+          <a href="index.html" class="pa-logo" aria-label="Passionate — accueil">
+            <span class="pa-logo-mark" aria-hidden="true"><i class="fa fa-heart"></i></span>
+            <span>Passion<em>ate</em></span>
+          </a>
+          <p>Passionate rassemble celles et ceux qui vibrent pour les mêmes séries, musiques, jeux et univers. Partage ce que tu aimes, trouve ta communauté.</p>
+          <div class="pa-socials">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="X"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </div>
         </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Produit</h5>
+          <ul>
+            <li><a href="browse.html">Découvrir</a></li>
+            <li><a href="streams.html">Lives</a></li>
+            <li><a href="passions.html">Mes passions</a></li>
+            <li><a href="messages.html">Messages</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Communauté</h5>
+          <ul>
+            <li><a href="details.html">Groupes</a></li>
+            <li><a href="profile.html">Mon profil</a></li>
+            <li><a href="signup.html">Créer un compte</a></li>
+            <li><a href="login.html">Se connecter</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Ressources</h5>
+          <ul>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Règles de la communauté</a></li>
+            <li><a href="#">Sécurité</a></li>
+            <li><a href="#">Nous contacter</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Légal</h5>
+          <ul>
+            <li><a href="#">Confidentialité</a></li>
+            <li><a href="#">Conditions</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Mentions légales</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pa-footer-bottom">
+        <p>Copyright &copy; 2036 <a href="index.html">Passionate</a>. Tous droits réservés.</p>
+        <p>Design&nbsp;: <a href="https://templatemo.com" target="_blank" rel="noopener" title="free CSS templates">TemplateMo</a> — Distribué par <a href="https://themewagon.com" target="_blank" rel="noopener">ThemeWagon</a></p>
       </div>
     </div>
   </footer>
+  <!-- ***** Footer End ***** -->
 
 
   <!-- Scripts -->
@@ -166,6 +222,7 @@
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/passionate-ui.js"></script>
 
 
   </body>

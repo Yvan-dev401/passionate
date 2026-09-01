@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
   <head>
 
     <meta charset="utf-8">
+    <meta name="description" content="Passionate — le réseau qui relie les passionnés. Partage tes séries, films, musiques et univers favoris, et rencontre des gens qui les aiment autant que toi.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Cyborg - Awesome HTML5 Template</title>
+    <title>Passionate — Mon profil</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/passionate-ui.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 <!--
 
@@ -27,9 +29,12 @@ TemplateMo 579 Cyborg Gaming
 https://templatemo.com/tm-579-cyborg-gaming
 
 -->
+    <script>document.documentElement.className += ' pa-js';</script>
   </head>
 
 <body>
+
+  <a class="pa-skip-link" href="#main-content">Aller au contenu principal</a>
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
@@ -51,29 +56,30 @@ https://templatemo.com/tm-579-cyborg-gaming
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/logo.png" alt="">
+                    <a href="index.html" class="logo pa-logo" aria-label="Passionate — accueil">
+                        <span class="pa-logo-mark" aria-hidden="true"><i class="fa fa-heart"></i></span>
+                        <span>Passion<em>ate</em></span>
                     </a>
                     <!-- ***** Logo End ***** -->
-                    <!-- ***** Search End ***** -->
+                    <!-- ***** Search Start ***** -->
                     <div class="search-input">
-                      <form id="search" action="#">
-                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
-                        <i class="fa fa-search"></i>
+                      <form id="search" action="#" role="search">
+                        <label class="sr-only" for="searchText">Rechercher</label>
+                        <input type="text" placeholder="Rechercher une passion, un membre…" id="searchText" name="searchKeyword" autocomplete="off">
+                        <i class="fa fa-search" aria-hidden="true"></i>
                       </form>
                     </div>
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="browse.html">Browse</a></li>
-                        <li><a href="details.html">Details</a></li>
-                        <li><a href="streams.html">Streams</a></li>
-                        <li><a href="passions.html">Passions</a></li>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="browse.html">Découvrir</a></li>
+                        <li><a href="streams.html">Lives</a></li>
+                        <li><a href="passions.html">Mes passions</a></li>
                         <li><a href="messages.html">Messages</a></li>
-                        <li><a href="signup.html">Sign Up</a></li>
-                        <li><a href="profile.html" class="active">Profile <img src="assets/images/profile-header.jpg" alt=""></a></li>
-                    </ul>   
+                        <li class="nav-cta"><a href="login.html">Se connecter</a></li>
+                        <li><a href="profile.html" class="active">Profil <img src="assets/images/profile-header.jpg" alt="Photo de profil"></a></li>
+                    </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
@@ -88,7 +94,7 @@ https://templatemo.com/tm-579-cyborg-gaming
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <div class="page-content">
+        <div class="page-content" id="main-content">
 
           <!-- ***** Banner Start ***** -->
           <div class="row">
@@ -232,17 +238,67 @@ https://templatemo.com/tm-579-cyborg-gaming
     </div>
   </div>
   
-  <footer>
+  <!-- ***** Footer Start ***** -->
+  <footer class="pa-footer">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
-          
-          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
+        <div class="col-lg-4 col-md-6 pa-footer-brand">
+          <a href="index.html" class="pa-logo" aria-label="Passionate — accueil">
+            <span class="pa-logo-mark" aria-hidden="true"><i class="fa fa-heart"></i></span>
+            <span>Passion<em>ate</em></span>
+          </a>
+          <p>Passionate rassemble celles et ceux qui vibrent pour les mêmes séries, musiques, jeux et univers. Partage ce que tu aimes, trouve ta communauté.</p>
+          <div class="pa-socials">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="X"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+          </div>
         </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Produit</h5>
+          <ul>
+            <li><a href="browse.html">Découvrir</a></li>
+            <li><a href="streams.html">Lives</a></li>
+            <li><a href="passions.html">Mes passions</a></li>
+            <li><a href="messages.html">Messages</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Communauté</h5>
+          <ul>
+            <li><a href="details.html">Groupes</a></li>
+            <li><a href="profile.html">Mon profil</a></li>
+            <li><a href="signup.html">Créer un compte</a></li>
+            <li><a href="login.html">Se connecter</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Ressources</h5>
+          <ul>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Règles de la communauté</a></li>
+            <li><a href="#">Sécurité</a></li>
+            <li><a href="#">Nous contacter</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Légal</h5>
+          <ul>
+            <li><a href="#">Confidentialité</a></li>
+            <li><a href="#">Conditions</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Mentions légales</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pa-footer-bottom">
+        <p>Copyright &copy; 2036 <a href="index.html">Passionate</a>. Tous droits réservés.</p>
+        <p>Design&nbsp;: <a href="https://templatemo.com" target="_blank" rel="noopener" title="free CSS templates">TemplateMo</a> — Distribué par <a href="https://themewagon.com" target="_blank" rel="noopener">ThemeWagon</a></p>
       </div>
     </div>
   </footer>
+  <!-- ***** Footer End ***** -->
 
 
   <!-- Scripts -->
@@ -255,6 +311,7 @@ https://templatemo.com/tm-579-cyborg-gaming
   <script src="assets/js/tabs.js"></script>
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/passionate-ui.js"></script>
 
 
   </body>
